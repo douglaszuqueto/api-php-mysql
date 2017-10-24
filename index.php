@@ -9,10 +9,10 @@ use Psr\Http\Message\ServerRequestInterface;
 // DATABASE
 function getConn()
 {
-  $DB_HOST = '172.17.0.1';
-  $DB_DATABASE = 'rfid';
-  $DB_USERNAME = 'docker';
-  $DB_PASSWORD = null;
+  $DB_HOST = 'simples-mysql';
+  $DB_DATABASE = 'simples';
+  $DB_USERNAME = 'user';
+  $DB_PASSWORD = 'pass';
 
   try {
     $pdo = new PDO("mysql:host={$DB_HOST};dbname={$DB_DATABASE}", $DB_USERNAME, $DB_PASSWORD);
